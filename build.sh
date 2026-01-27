@@ -14,7 +14,7 @@ build() {
   GOARCH=$2
   EXT=$3
 
-  OUT="$OUT_DIR/${APP_NAME}-${GOOS}-${GOARCH}${EXT}"
+  OUT="$OUT_DIR/${APP_NAME}-${VERSION}-${GOOS}-${GOARCH}${EXT}"
   echo " -> $OUT"
 
   GOOS=$GOOS GOARCH=$GOARCH CGO_ENABLED=0 \
