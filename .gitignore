@@ -1,0 +1,31 @@
+# Go build outputs
+elf2vkp-go
+*.exe
+*.out
+*.test
+/dist
+
+# Go workspace/cache
+/go.work
+/go.work.sum
+
+# Firmware / binary inputs
+*.bin
+*.elf
+*.mbn
+*.cxc
+
+# Temporary / generated files
+*.log
+*.tmp
+*.vkp
+
+# Editor junk
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
