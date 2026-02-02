@@ -12,7 +12,7 @@ import (
 	"strings"
 )
 
-const version = "0.1.0"
+const version = "0.1.1"
 
 type multiFlag []string
 
@@ -166,6 +166,9 @@ func main() {
 
 	// Emit headers
 	for _, h := range headers {
+		if !strings.HasPrefix(h, ";") {
+			h = ";" + h
+		}
 		fmt.Fprintln(out, h)
 	}
 
